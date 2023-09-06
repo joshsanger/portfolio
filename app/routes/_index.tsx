@@ -1,45 +1,23 @@
 import type {V2_MetaFunction, LinksFunction} from '@remix-run/node';
 
+import Heading from '~/components/Heading';
 import styles from '~/styles/tailwind.css';
 
 export const links: LinksFunction = () => [{rel: 'stylesheet', href: styles}];
 
 export const meta: V2_MetaFunction = () => {
   return [
-    {title: 'New Remix App'},
-    {name: 'description', content: 'Welcome to Remix!'},
+    {title: 'Josh Sanger | Front end developer'},
+    {name: 'description', content: 'Front end developer'},
   ];
 };
 
 export default function Index() {
   return (
-    <div style={{fontFamily: 'system-ui, sans-serif', lineHeight: '1.8'}}>
-      <h1 className="mb-24">Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
+    <main className="grid place-items-center h-full">
+      <Heading className="text-center">
+        I create engaging and delightful web experiences
+      </Heading>
+    </main>
   );
 }

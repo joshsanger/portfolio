@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+@layer base {
 
 }
 
@@ -11,5 +11,18 @@
 }
 
 @layer utilities {
+  .gradient-heading {
+    --color-one: #E26D5F;
+    --color-two: #0E0B3D;
 
-} */
+    font-size: clamp(2rem, 7vmin, 4rem);
+    max-width: 800px;
+    font-family: 'Helvetica';
+    font-weight: 700;
+    text-align: center;
+    background: radial-gradient(circle at 13% 54%, var(--color-one) 13%, var(--color-two) 54%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
