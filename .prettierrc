@@ -1,0 +1,10 @@
+{
+  "arrowParens": "always",
+  "singleQuote": true,
+  "bracketSpacing": false,
+  "trailingComma": "all",
+  "useTabs": false,
+  "tabWidth": 2,
+  "tailwindConfig": "./tailwind.config.js",
+  "tailwindAttributes": ["barClasses", "buttonClasses"]
+}

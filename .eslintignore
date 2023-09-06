@@ -1,0 +1,11 @@
+node_modules
+
+*.d.ts
+bin
+dist
+build
+/test
+
+public
+app/styles/tailwindOverrides/
+.prettierrc
