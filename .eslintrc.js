@@ -12,27 +12,7 @@ module.exports = {
     /**
      * ESlint overrides
      */
-    camelcase: [
-      'error',
-      {
-        properties: 'always',
-        allow: [
-          '^UNSAFE_',
-          '^animate__',
-          '^client_',
-          '^experiment_',
-          '^event_',
-          '^page_',
-          '^schema_',
-          '^session_',
-          '^signup_',
-          '^st_',
-          '^tealium_',
-          '^user_',
-          '^utm_',
-        ],
-      },
-    ],
+    camelcase: 'off',
     eqeqeq: 'error',
     'import/extensions': [
       'error',

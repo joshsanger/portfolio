@@ -1,22 +1,19 @@
-import type {V2_MetaFunction, LinksFunction} from "@remix-run/node";
+import type {V2_MetaFunction, LinksFunction} from '@remix-run/node';
 
-import styles from "~/styles/tailwind.css";
+import styles from '~/styles/tailwind.css';
 
-export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: styles },
-];
+export const links: LinksFunction = () => [{rel: 'stylesheet', href: styles}];
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    {title: 'New Remix App'},
+    {name: 'description', content: 'Welcome to Remix!'},
   ];
 };
 
 export default function Index() {
-  console.log('test');
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+    <div style={{fontFamily: 'system-ui, sans-serif', lineHeight: '1.8'}}>
       <h1>Welcome to Remix</h1>
       <ul>
         <li>

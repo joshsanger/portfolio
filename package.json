@@ -5,7 +5,8 @@
     "build": "remix build",
     "dev": "remix dev",
     "lint": "eslint --no-error-on-unmatched-pattern --ext .js,.jsx,.ts,.tsx .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@remix-run/css-bundle": "^1.19.3",
@@ -36,7 +37,7 @@
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "lint-staged": "^14.0.1",
     "postcss": "^8.4.29",
     "postcss-import": "^15.1.0",
