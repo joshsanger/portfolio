@@ -4,11 +4,8 @@ module.exports = {
   ignorePatterns: ['node_modules', 'dist', 'build', 'remix.config.js'],
   extends: [
     '@remix-run/eslint-config',
-    'plugin:hydrogen/recommended',
-    'plugin:hydrogen/typescript',
     'plugin:json/recommended',
     'plugin:prettier/recommended',
-    'plugin:storybook/recommended',
     'plugin:tailwindcss/recommended',
   ],
   rules: {
