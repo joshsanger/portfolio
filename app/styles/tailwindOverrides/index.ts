@@ -1,5 +1,5 @@
 import animation from './animation';
-import backgroundImages from './backgroundImages';
+import backgroundImage from './backgroundImage';
 import borderRadius from './borderRadius';
 import boxShadow from './boxShadow';
 import colors from './colors';
@@ -14,7 +14,7 @@ import spacing from './spacing';
 
 export {
   animation,
-  backgroundImages,
+  backgroundImage,
   borderRadius,
   boxShadow,
   colors,

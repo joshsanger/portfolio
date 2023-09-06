@@ -2,7 +2,7 @@ import type {Config} from 'tailwindcss';
 
 import {
   animation,
-  backgroundImages,
+  backgroundImage,
   borderRadius,
   boxShadow,
   colors,
@@ -14,14 +14,15 @@ import {
   minHeight,
   screens,
   spacing,
-} from '~/styles/tailwindOverrides';
+} from './app/styles/tailwindOverrides';
 
+/** @type {import('tailwindcss').Config} */
 export default {
   content: ['./app/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       animation,
-      backgroundImages,
+      backgroundImage,
       borderRadius,
       boxShadow,
       colors,
